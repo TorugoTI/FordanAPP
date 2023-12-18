@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bege"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="RtlHardcoded">
+
+    <View
+        android:id="@+id/circulo"
+        android:layout_width="550dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginBottom="552dp"
+        android:background="@drawable/circulo_roxo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,VisualLintBounds" />
+
+
+    <TextView
+        android:id="@+id/conta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fordan"
+        android:textAlignment="center"
+        android:textColor="@color/bege"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@+id/circulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.798"
+        app:layout_constraintStart_toStartOf="@+id/circulo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/raca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/raca"
+        android:maxLength="11"
+        android:textAlignment="center"
+        android:textColor="@color/azul"
+        android:textColorHint="@color/azul"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circulo"
+        app:layout_constraintVertical_bias="0.136"
+        tools:ignore="Autofill,MissingConstraints,TextFields,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/speak"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="347dp"
+        android:background="@drawable/speak"
+        app:layout_constraintBottom_toTopOf="@+id/raca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.829"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/sim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="318dp"
+        android:background="@color/verde"
+        android:hint="@string/sim"
+        android:textColorHint="@color/bege"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raca"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/nao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="318dp"
+        android:background="@color/vermelho"
+        android:hint="@string/nao"
+        android:textColorHint="@color/bege"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raca"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/preto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="275dp"
+        android:background="@drawable/btn_corner"
+        android:hint="@string/preto"
+        android:textColorHint="@color/bege"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sim"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <Button
+        android:id="@+id/pardo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginEnd="153dp"
+        android:background="@drawable/btn_corner"
+        android:hint="@string/pardo"
+        android:textColorHint="@color/bege"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nao"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <Button
+        android:id="@+id/branco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="281dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/btn_corner"
+        android:hint="@string/branco"
+        android:textColorHint="@color/bege"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nao"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <Button
+        android:id="@+id/amarelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="275dp"
+        android:layout_marginBottom="148dp"
+        android:background="@drawable/btn_corner"
+        android:hint="@string/amarelo"
+        android:textColorHint="@color/bege"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/preto"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/indigena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="148dp"
+        android:background="@drawable/btn_corner"
+        android:hint="@string/indigena"
+        android:textColorHint="@color/bege"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pardo"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/quilombola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="281dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="148dp"
+        android:background="@drawable/btn_corner"
+        android:hint="@string/quilombola"
+        android:textColorHint="@color/bege"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/branco"
+        tools:ignore="TextContrastCheck,UnknownId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

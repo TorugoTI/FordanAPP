@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/roxo"
+    tools:context=".Info">
+
+
+    <Button
+        android:id="@+id/voltar"
+        style="@style/seta"
+        app:layout_constraintBottom_toBottomOf="@+id/circulo"
+        app:layout_constraintEnd_toEndOf="@+id/circulo"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <View
+        android:id="@+id/circulo"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginBottom="652dp"
+        android:background="@drawable/circulo_bege"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/conta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informações"
+        android:textAlignment="center"
+        android:textColor="@color/azul"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@+id/circulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="@+id/circulo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/aviso"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:background="@color/bege"
+        android:text="Aviso Importante"
+        android:textColor="@color/azul"
+        app:layout_constraintBottom_toTopOf="@+id/logos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app"
+        app:layout_constraintVertical_bias="0.504"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
+
+    <Button
+        android:id="@+id/app"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:background="@color/bege"
+        android:text="Como usar o App"
+        android:textColor="@color/azul"
+        app:layout_constraintBottom_toTopOf="@+id/logos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circulo"
+        app:layout_constraintVertical_bias="0.79"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
+
+    <View
+        android:id="@+id/logos"
+        android:layout_width="391dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="792dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/logos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,VisualLintBounds" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/roxo"
+    tools:context=".Perfil.Perfil">
+
+    <Button
+        android:id="@+id/voltar"
+        style="@style/seta"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,VisualLintOverlap"
+        tools:layout_editor_absoluteX="339dp"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <View
+        android:id="@+id/circulo"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_marginBottom="576dp"
+        android:background="@drawable/circulo_bege"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,VisualLintBounds" />
+
+    <View
+        android:id="@+id/user"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/perfil"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_user"
+        app:layout_constraintBottom_toBottomOf="@id/user"
+        app:layout_constraintEnd_toEndOf="@id/user"
+        app:layout_constraintStart_toStartOf="@id/user"
+        app:layout_constraintTop_toTopOf="@id/user"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:hint="Nome"
+        android:textColor="@color/bege"
+        android:textColorHint="@color/bege"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Escola"
+        app:layout_constraintEnd_toEndOf="@id/user"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="@id/perfil"
+        app:layout_constraintTop_toBottomOf="@id/perfil"
+        tools:ignore="Autofill,HardcodedText,NotSibling,TextFields,VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/CPF"
+        android:layout_width="220dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:hint="CPF"
+        android:textColor="@color/bege"
+        android:textColorHint="@color/bege"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="Autofill,HardcodedText,MissingConstraints,SpeakableTextPresentCheck,TextFields,TextViewEdits,VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/Cep"
+        android:layout_width="160dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:hint="CEP"
+        android:textColor="@color/bege"
+        android:textColorHint="@color/bege"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/CPF"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="Autofill,HardcodedText,SpeakableTextPresentCheck,TextFields,TextViewEdits,VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/Raca"
+        android:layout_width="180dp"
+        android:layout_height="38dp"
+        android:hint="Raça"
+        android:textColor="@color/bege"
+        android:textColorHint="@color/bege"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Escola"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Cep"
+        app:layout_constraintVertical_bias="0.51"
+        tools:ignore="Autofill,HardcodedText,MissingConstraints,SpeakableTextPresentCheck,TextFields,TextViewEdits,VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/Orientacao"
+        android:layout_width="210dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="203dp"
+        android:hint="Orientação"
+        android:textColor="@color/bege"
+        android:textColorHint="@color/bege"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/editar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Escola"
+        app:layout_constraintVertical_bias="0.172"
+        tools:ignore="Autofill,HardcodedText,SpeakableTextPresentCheck,TextFields,TextViewEdits,VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/Religião"
+        android:layout_width="180dp"
+        android:layout_height="38dp"
+        android:hint="Religião"
+        android:textColor="@color/bege"
+        android:textColorHint="@color/bege"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Escola"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Raca"
+        app:layout_constraintTop_toBottomOf="@+id/CPF"
+        tools:ignore="Autofill,HardcodedText,MissingConstraints,SpeakableTextPresentCheck,TextFields,TextViewEdits,VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/Escola"
+        style="@style/Edit_Text"
+        android:hint="Escolaridade"
+        android:textColor="@color/bege"
+        android:textColorHint="@color/bege"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circulo"
+        tools:ignore="Autofill,HardcodedText,MissingConstraints,SpeakableTextPresentCheck,TextFields,TextViewEdits,VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/editar"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="183dp"
+        android:backgroundTint="@color/bege"
+        android:padding="20dp"
+        android:text="@string/editar"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Escola"
+        app:layout_constraintVertical_bias="0.776"
+        tools:ignore="VisualLintButtonSize" />
+
+    <ImageButton
+        android:id="@+id/speak"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/som"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toEndOf="@+id/editar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.942"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

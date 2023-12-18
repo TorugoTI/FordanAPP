@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bege"
+    tools:context=".Perfil.Eu.Religiao"
+    tools:ignore="RtlHardcoded">
+
+        <Button
+            android:id="@+id/ateu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/azul"
+            android:hint="Ateu"
+            android:textColorHint="@color/bege"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toEndOf="@+id/umba"
+            app:layout_constraintTop_toBottomOf="@+id/espi"
+            app:layout_constraintVertical_bias="0.038"
+            tools:ignore="MissingConstraints,TextContrastCheck,UnknownId" />
+
+        <View
+            android:id="@+id/circulo"
+            android:layout_width="550dp"
+            android:layout_height="550dp"
+            android:layout_marginStart="118dp"
+            android:layout_marginBottom="552dp"
+            android:background="@drawable/circulo_roxo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints,VisualLintBounds" />
+
+
+        <TextView
+            android:id="@+id/conta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fordan"
+            android:textAlignment="center"
+            android:textColor="@color/bege"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="@+id/circulo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.798"
+            app:layout_constraintStart_toStartOf="@+id/circulo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.414"
+            tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/reli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Qual a sua Religião?"
+            android:textAlignment="center"
+            android:textColor="@color/azul"
+            android:textColorHint="@color/azul"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circulo"
+            app:layout_constraintVertical_bias="0.136"
+            tools:ignore="Autofill,MissingConstraints,TextFields,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/speak"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="224dp"
+            android:layout_marginEnd="347dp"
+            android:background="@drawable/speak"
+            app:layout_constraintBottom_toTopOf="@+id/reli"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.829"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/cato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="275dp"
+            android:background="@color/azul"
+            android:hint="Católica"
+            android:textColorHint="@color/bege"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.188"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reli"
+            app:layout_constraintVertical_bias="0.053"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/cando"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/azul"
+            android:hint="Candomblé"
+            android:textColorHint="@color/bege"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.098"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/evan"
+            app:layout_constraintVertical_bias="0.038"
+            tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/evan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/azul"
+            android:hint="Evangélica"
+            android:textColorHint="@color/bege"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/espi"
+            app:layout_constraintHorizontal_bias="0.446"
+            app:layout_constraintStart_toEndOf="@+id/cato"
+            app:layout_constraintTop_toBottomOf="@+id/reli"
+            app:layout_constraintVertical_bias="0.053"
+            tools:ignore="MissingConstraints,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/umba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/azul"
+            android:hint="Umbanda"
+            android:textColorHint="@color/bege"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.181"
+            app:layout_constraintStart_toEndOf="@+id/cando"
+            app:layout_constraintTop_toBottomOf="@+id/evan"
+            app:layout_constraintVertical_bias="0.038"
+            tools:ignore="MissingConstraints,TextContrastCheck,UnknownId" />
+
+        <Button
+            android:id="@+id/agno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/azul"
+            android:hint="Agnostico"
+            android:textColorHint="@color/bege"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/judeu"
+            app:layout_constraintHorizontal_bias="0.598"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cando"
+            app:layout_constraintVertical_bias="0.056"
+            tools:ignore="MissingConstraints,TextContrastCheck,UnknownId" />
+
+        <Button
+            android:id="@+id/judeu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/azul"
+            android:hint="Judeu"
+            android:textColorHint="@color/bege"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.74"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reli"
+            app:layout_constraintVertical_bias="0.358"
+            tools:ignore="MissingConstraints,TextContrastCheck,UnknownId" />
+
+        <Button
+            android:id="@+id/espi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/azul"
+            android:hint="Espirita"
+            android:textColorHint="@color/bege"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.733"
+            app:layout_constraintStart_toEndOf="@+id/evan"
+            app:layout_constraintTop_toBottomOf="@+id/reli"
+            app:layout_constraintVertical_bias="0.053"
+            tools:ignore="MissingConstraints,TextContrastCheck,UnknownId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

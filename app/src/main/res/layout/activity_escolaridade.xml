@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bege"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="RtlHardcoded">
+
+    <View
+        android:id="@+id/circulo"
+        android:layout_width="550dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginBottom="552dp"
+        android:background="@drawable/circulo_roxo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,VisualLintBounds" />
+
+
+    <TextView
+        android:id="@+id/conta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fordan"
+        android:textAlignment="center"
+        android:textColor="@color/bege"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@+id/circulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.798"
+        app:layout_constraintStart_toStartOf="@+id/circulo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/escola"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/escola"
+        android:maxLength="11"
+        android:textAlignment="center"
+        android:textColor="@color/azul"
+        android:textColorHint="@color/azul"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circulo"
+        app:layout_constraintVertical_bias="0.136"
+        tools:ignore="Autofill,MissingConstraints,TextFields,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/speak"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="347dp"
+        android:background="@drawable/speak"
+        app:layout_constraintBottom_toTopOf="@+id/escola"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.829"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/fundaIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="275dp"
+        android:background="@color/azul"
+        android:hint="@string/fundaIn"
+        android:textColorHint="@color/bege"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/escola"
+        app:layout_constraintVertical_bias="0.053"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/supIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/azul"
+        android:hint="Ensino Superior Incompleto"
+        android:textColorHint="@color/bege"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fundaCom"
+        app:layout_constraintVertical_bias="0.05"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/supCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/azul"
+        android:hint="@string/supCom"
+        android:textColorHint="@color/bege"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toEndOf="@+id/supIn"
+        app:layout_constraintTop_toBottomOf="@+id/medioCom"
+        app:layout_constraintVertical_bias="0.05"
+        tools:ignore="MissingConstraints,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/fundaCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/azul"
+        android:hint="@string/fundaCom"
+        android:textColorHint="@color/bege"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fundaIn"
+        app:layout_constraintVertical_bias="0.046"
+        tools:ignore="MissingConstraints,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/medioCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/azul"
+        android:hint="@string/medioCom"
+        android:textColorHint="@color/bege"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toEndOf="@+id/fundaCom"
+        app:layout_constraintTop_toBottomOf="@+id/medioIn"
+        app:layout_constraintVertical_bias="0.043"
+        tools:ignore="MissingConstraints,TextContrastCheck,UnknownId" />
+
+    <Button
+        android:id="@+id/doutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/azul"
+        android:hint="Doutorado"
+        android:textColorHint="@color/bege"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.598"
+        app:layout_constraintStart_toEndOf="@+id/mestre"
+        app:layout_constraintTop_toBottomOf="@+id/supCom"
+        app:layout_constraintVertical_bias="0.078"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck,UnknownId" />
+
+    <Button
+        android:id="@+id/mestre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/azul"
+        android:hint="@string/mestrado"
+        android:textColorHint="@color/bege"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/supIn"
+        app:layout_constraintVertical_bias="0.078"
+        tools:ignore="MissingConstraints,UnknownId,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/medioIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/azul"
+        android:hint="@string/medioIn"
+        android:textColorHint="@color/bege"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintStart_toEndOf="@+id/fundaIn"
+        app:layout_constraintTop_toBottomOf="@+id/escola"
+        app:layout_constraintVertical_bias="0.055"
+        tools:ignore="MissingConstraints,TextContrastCheck,UnknownId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

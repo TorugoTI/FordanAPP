@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pensão.pg8"
+    android:background="@drawable/bege"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded">
+
+    <View
+        android:id="@+id/circulo"
+        android:layout_width="550dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginBottom="552dp"
+        android:background="@drawable/circulo_roxo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,VisualLintBounds" />
+
+    <TextView
+        android:id="@+id/conta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fordan"
+        android:textAlignment="center"
+        android:textColor="@color/bege"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@+id/circulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.798"
+        app:layout_constraintStart_toStartOf="@+id/circulo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/raca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="O (A) genitor (a) que pagará a pensão já contribui com algum valor de forma espontânea? "
+        android:textAlignment="center"
+        android:textColor="@color/azul"
+        android:textColorHint="@color/azul"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circulo"
+        app:layout_constraintVertical_bias="0.136"
+        tools:ignore="Autofill,MissingConstraints,TextFields,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/speak"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="347dp"
+        android:background="@drawable/speak"
+        app:layout_constraintBottom_toTopOf="@+id/raca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.829"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/sim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="318dp"
+        android:background="@color/verde"
+        android:hint="@string/sim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raca"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/nao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="318dp"
+        android:background="@color/vermelho"
+        android:hint="@string/nao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raca"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/pgt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Qual o valor? O valor é insuficiente? Houve tentativa de acordo com a parte requerida?"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:textColor="@color/azul"
+        android:textColorHint="@color/azul"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circulo"
+        app:layout_constraintVertical_bias="0.526"
+        tools:ignore="Autofill,MissingConstraints,TextFields,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="156dp"
+        android:background="@drawable/btn_corner"
+        android:visibility="gone"
+        android:hint="@string/frente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pgt" />
+
+    <ImageButton
+        android:id="@+id/mic"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="363dp"
+        android:background="@drawable/mic"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/pgt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pgt"
+        app:layout_constraintVertical_bias="0.533"
+        tools:ignore="ContentDescription,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

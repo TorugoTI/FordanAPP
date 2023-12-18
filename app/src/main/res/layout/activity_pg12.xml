@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pensão.pg12"
+    android:background="@drawable/bege"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded">
+
+    <View
+        android:id="@+id/circulo"
+        android:layout_width="550dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginBottom="552dp"
+        android:background="@drawable/circulo_roxo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,VisualLintBounds" />
+
+
+    <TextView
+        android:id="@+id/conta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fordan"
+        android:textAlignment="center"
+        android:textColor="@color/bege"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@+id/circulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.798"
+        app:layout_constraintStart_toStartOf="@+id/circulo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/pgt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Deseja regularizar a guarda e visitação do(a) genitor(a) ao menor?"
+        android:textAlignment="center"
+        android:textColor="@color/azul"
+        android:textColorHint="@color/azul"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circulo"
+        app:layout_constraintVertical_bias="0.278"
+        tools:ignore="Autofill,HardcodedText,MissingConstraints,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <ImageButton
+        android:id="@+id/speak"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/speak"
+        app:layout_constraintBottom_toTopOf="@+id/pgt"
+        app:layout_constraintEnd_toStartOf="@+id/mic"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/mic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/mic"
+        app:layout_constraintBottom_toTopOf="@+id/pgt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circulo"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="ContentDescription,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="318dp"
+        android:background="@drawable/btn_corner"
+        android:hint="@string/frente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pgt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "327648831945",
+    "firebase_url": "https://fordan-89ac5-default-rtdb.firebaseio.com",
+    "project_id": "fordan-89ac5",
+    "storage_bucket": "fordan-89ac5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327648831945:android:bfb8273c1b7bf6fb78a018",
+        "android_client_info": {
+          "package_name": "com.App.fordan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "327648831945-5v1lrnv9rd3o6g15n2mb2me17s7glm1i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.App.fordan",
+            "certificate_hash": "e8d72731a0c3e4c762072a69d89dbe33a0031094"
+          }
+        },
+        {
+          "client_id": "327648831945-be47qnnsle3jom38lpgo0p67n6hc2694.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUaUrOQBRX9kFZVoNwHVsazqocreB8hBs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "327648831945-0hurpcj9e5akhi6an7l3ii8qcb88j3oq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

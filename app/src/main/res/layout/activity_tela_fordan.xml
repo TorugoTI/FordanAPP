@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/roxo"
+    tools:context=".Tela_fordan"
+    tools:ignore="MissingDefaultResource">
+
+    <View
+        android:id="@+id/circulo2"
+        android:layout_width="950dp"
+        android:layout_height="950dp"
+        android:layout_marginBottom="128dp"
+        android:background="@drawable/circulo_bege"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,VisualLintBounds" />
+
+    <View
+        android:id="@+id/circulo"
+        android:layout_width="450dp"
+        android:layout_height="450dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="662dp"
+        android:background="@drawable/circulo_roxo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints,VisualLintBounds" />
+
+    <Button
+        android:id="@+id/btn_Sair"
+        style="@style/Botão"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@color/azul"
+        android:rotationX="-8"
+        android:text="@string/sair"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints,TextContrastCheck,VisualLintOverlap" />
+
+
+    <ImageButton
+        android:id="@+id/speak"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginEnd="41dp"
+        android:background="@drawable/speak"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Sair"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="170dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/app"
+        android:textColor="@color/azul"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/circulo"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
+
+    <Button
+        android:id="@+id/btn_Info"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="240dp"
+        android:background="@color/azul"
+        android:text="@string/Info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="73dp" />
+
+    <Button
+        android:id="@+id/btn_Acoes"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/azul"
+        android:text="@string/acoes"
+        app:layout_constraintBottom_toTopOf="@id/btn_Info"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="73dp" />
+
+    <Button
+        android:id="@+id/btn_perfil"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/azul"
+        android:text="@string/perfil"
+        app:layout_constraintBottom_toTopOf="@id/btn_Acoes"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="73dp" />
+
+    <View
+        android:id="@+id/logos"
+        android:layout_width="391dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="792dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/logos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,VisualLintBounds" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
